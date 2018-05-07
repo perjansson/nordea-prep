@@ -1,0 +1,13 @@
+{
+    "name": "nordea-prep",
+    "version": "1.0.0",
+    "license": "MIT",
+    "private": true,
+    "workspaces": ["packages/*"],
+    "scripts": {
+        "start:web": "cd packages/web && yarn start"
+    },
+    "devDependencies": {
+        "lerna": "^2.11.0"
+    }
+}
