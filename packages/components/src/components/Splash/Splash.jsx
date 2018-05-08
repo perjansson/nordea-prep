@@ -1,15 +1,16 @@
-import React from 'react';
+import { element } from 'prop-types'
+import styled from 'styled-components'
 
-const styles = {
-    container: {
-        width: '100vw',
-        height: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-};
+const Splash = styled.div`
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
 
-const Splash = ({ children }) => <div style={styles.container}>{children}</div>;
+Splash.propTypes = {
+    children: element.isRequired,
+}
 
-export default Splash;
+export default Splash
