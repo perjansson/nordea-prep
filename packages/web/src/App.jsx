@@ -1,21 +1,11 @@
 import React from 'react'
 
-import { Splash, Rotate, Title } from '@nordea-prep/components'
-
 import ErrorBoundary from 'ErrorBoundary'
+import Routes from 'Routes'
 
 const App = () => (
     <ErrorBoundary>
-        <Splash>
-            <Rotate>
-                <Title onClick={() => console.log('click')} className="title">
-                    nordea-prep-web{' '}
-                    <span role="img" aria-label="smiley-with-sun-glasses">
-                        😎
-                    </span>
-                </Title>
-            </Rotate>
-        </Splash>
+        <Routes />
     </ErrorBoundary>
 )
 
