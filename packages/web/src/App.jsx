@@ -8,7 +8,7 @@ const App = () => (
     <ErrorBoundary>
         <Splash>
             <Rotate>
-                <Title className="title">
+                <Title onClick={() => console.log('click')} className="title">
                     nordea-prep-web{' '}
                     <span role="img" aria-label="smiley-with-sun-glasses">
                         😎
