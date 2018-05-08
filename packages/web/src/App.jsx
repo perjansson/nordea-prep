@@ -1,16 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-import ErrorBoundary from 'ErrorBoundary';
-import { Splash, Pulse, Title } from '@nordea-prep/components';
+import { Splash, Rotate, Title } from '@nordea-prep/components'
+
+import ErrorBoundary from 'ErrorBoundary'
 
 const App = () => (
     <ErrorBoundary>
         <Splash>
-            <Pulse>
-                <Title className="title">nordea-prep-web 😎</Title>
-            </Pulse>
+            <Rotate>
+                <Title className="title">
+                    nordea-prep-web{' '}
+                    <span role="img" aria-label="smiley-with-sun-glasses">
+                        😎
+                    </span>
+                </Title>
+            </Rotate>
         </Splash>
     </ErrorBoundary>
-);
+)
 
-export default App;
+export default App
