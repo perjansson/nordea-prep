@@ -1,11 +1,16 @@
 import React from 'react';
 
-import { Splash, Title } from '@nordea-prep/components';
+import ErrorBoundary from 'ErrorBoundary';
+import { Splash, Rotate, Title } from '@nordea-prep/components';
 
 const App = () => (
-    <Splash>
-        <Title className="title">nordea-prep-web 😎</Title>
-    </Splash>
+    <ErrorBoundary>
+        <Splash>
+            <Rotate>
+                <Title className="title">nordea-prep-web 😎</Title>
+            </Rotate>
+        </Splash>
+    </ErrorBoundary>
 );
 
 export default App;

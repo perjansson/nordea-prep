@@ -1,4 +1,15 @@
 {
-    "presets": ["env"],
-    "plugins": ["transform-object-rest-spread", "transform-react-jsx"]
+    "presets": [
+        [
+            "env",
+            {
+                "modules": false,
+                "targets": {
+                    "browsers": ["last 2 versions", "not ie <= 10"]
+                }
+            }
+        ],
+        "react",
+        "stage-1"
+    ]
 }

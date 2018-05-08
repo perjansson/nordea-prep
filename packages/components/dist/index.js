@@ -81,6 +81,18 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/components/Rotate/Rotate.jsx":
+/*!******************************************!*\
+  !*** ./src/components/Rotate/Rotate.jsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n  from {\\n    transform: rotate(0deg);\\n  }\\n\\n  to {\\n    transform: rotate(360deg);\\n  }\\n'], ['\\n  from {\\n    transform: rotate(0deg);\\n  }\\n\\n  to {\\n    transform: rotate(360deg);\\n  }\\n']),\n    _templateObject2 = _taggedTemplateLiteral(['\\n    display: inline-block;\\n    animation: ', ' 7s linear infinite;\\n    padding: 2rem 1rem;\\n    font-size: 1.2rem;\\n'], ['\\n    display: inline-block;\\n    animation: ', ' 7s linear infinite;\\n    padding: 2rem 1rem;\\n    font-size: 1.2rem;\\n']);\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = __webpack_require__(/*! styled-components */ \"styled-components\");\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar rotate360 = (0, _styledComponents.keyframes)(_templateObject);\n\nvar Rotate = _styledComponents2.default.div(_templateObject2, rotate360);\n\nexports.default = Rotate;\n\n//# sourceURL=webpack://lib/./src/components/Rotate/Rotate.jsx?");
+
+/***/ }),
+
 /***/ "./src/components/Splash/Splash.jsx":
 /*!******************************************!*\
   !*** ./src/components/Splash/Splash.jsx ***!
@@ -101,7 +113,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n    font-size: 112px;\\n    color: #fff;\\n'], ['\\n    font-size: 112px;\\n    color: #fff;\\n']);\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = __webpack_require__(/*! styled-components */ \"styled-components\");\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar Title = _styledComponents2.default.h1(_templateObject);\n\nexports.default = Title;\n\n//# sourceURL=webpack://lib/./src/components/Title/Title.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n    font-size: 84px;\\n    color: #fff;\\n'], ['\\n    font-size: 84px;\\n    color: #fff;\\n']);\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = __webpack_require__(/*! styled-components */ \"styled-components\");\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar Title = _styledComponents2.default.h1(_templateObject);\n\nexports.default = Title;\n\n//# sourceURL=webpack://lib/./src/components/Title/Title.jsx?");
 
 /***/ }),
 
@@ -113,7 +125,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.Title = exports.Splash = undefined;\n\nvar _Splash = __webpack_require__(/*! ./components/Splash/Splash */ \"./src/components/Splash/Splash.jsx\");\n\nvar _Splash2 = _interopRequireDefault(_Splash);\n\nvar _Title = __webpack_require__(/*! ./components/Title/Title */ \"./src/components/Title/Title.jsx\");\n\nvar _Title2 = _interopRequireDefault(_Title);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Splash = _Splash2.default;\nexports.Title = _Title2.default;\n\n//# sourceURL=webpack://lib/./src/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.Title = exports.Rotate = exports.Splash = undefined;\n\nvar _Splash = __webpack_require__(/*! ./components/Splash/Splash */ \"./src/components/Splash/Splash.jsx\");\n\nvar _Splash2 = _interopRequireDefault(_Splash);\n\nvar _Rotate = __webpack_require__(/*! ./components/Rotate/Rotate */ \"./src/components/Rotate/Rotate.jsx\");\n\nvar _Rotate2 = _interopRequireDefault(_Rotate);\n\nvar _Title = __webpack_require__(/*! ./components/Title/Title */ \"./src/components/Title/Title.jsx\");\n\nvar _Title2 = _interopRequireDefault(_Title);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.Splash = _Splash2.default;\nexports.Rotate = _Rotate2.default;\nexports.Title = _Title2.default;\n\n//# sourceURL=webpack://lib/./src/index.js?");
 
 /***/ }),
 
