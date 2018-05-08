@@ -1,14 +1,14 @@
 import React from 'react';
 
 import ErrorBoundary from 'ErrorBoundary';
-import { Splash, Rotate, Title } from '@nordea-prep/components';
+import { Splash, Pulse, Title } from '@nordea-prep/components';
 
 const App = () => (
     <ErrorBoundary>
         <Splash>
-            <Rotate>
+            <Pulse>
                 <Title className="title">nordea-prep-web 😎</Title>
-            </Rotate>
+            </Pulse>
         </Splash>
     </ErrorBoundary>
 );

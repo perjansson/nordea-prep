@@ -14,8 +14,6 @@ const rotate360 = keyframes`
 const Rotate = styled.div`
     display: inline-block;
     animation: ${rotate360} 7s linear infinite;
-    padding: 2rem 1rem;
-    font-size: 1.2rem;
 `;
 
 export default Rotate;
