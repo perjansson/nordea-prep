@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react"));
+		module.exports = factory(require("react"), require("styled-components"));
 	else if(typeof define === 'function' && define.amd)
-		define(["react"], factory);
+		define(["react", "styled-components"], factory);
 	else if(typeof exports === 'object')
-		exports["lib"] = factory(require("react"));
+		exports["lib"] = factory(require("react"), require("styled-components"));
 	else
-		root["lib"] = factory(root["React"]);
-})(window, function(__WEBPACK_EXTERNAL_MODULE_react__) {
+		root["lib"] = factory(root["React"], root["styled-components"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_styled_components__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -101,7 +101,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Title = function Title(_ref) {\n  var children = _ref.children;\n  return _react2.default.createElement(\n    'h1',\n    null,\n    children\n  );\n};\n\nexports.default = Title;\n\n//# sourceURL=webpack://lib/./src/components/Title/Title.jsx?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _templateObject = _taggedTemplateLiteral(['\\n    font-size: 112px;\\n    color: #fff;\\n'], ['\\n    font-size: 112px;\\n    color: #fff;\\n']);\n\nvar _react = __webpack_require__(/*! react */ \"react\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styledComponents = __webpack_require__(/*! styled-components */ \"styled-components\");\n\nvar _styledComponents2 = _interopRequireDefault(_styledComponents);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nfunction _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }\n\nvar Title = _styledComponents2.default.h1(_templateObject);\n\nexports.default = Title;\n\n//# sourceURL=webpack://lib/./src/components/Title/Title.jsx?");
 
 /***/ }),
 
@@ -125,6 +125,17 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports) {
 
 eval("module.exports = __WEBPACK_EXTERNAL_MODULE_react__;\n\n//# sourceURL=webpack://lib/external_%7B%22root%22:%22React%22,%22commonjs2%22:%22react%22,%22commonjs%22:%22react%22,%22amd%22:%22react%22%7D?");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!**************************************************************************************************************************************!*\
+  !*** external {"root":"styled-components","commonjs":"styled-components","commonjs2":"styled-components","amd":"styled-components"} ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_styled_components__;\n\n//# sourceURL=webpack://lib/external_%7B%22root%22:%22styled-components%22,%22commonjs%22:%22styled-components%22,%22commonjs2%22:%22styled-components%22,%22amd%22:%22styled-components%22%7D?");
 
 /***/ })
 

@@ -32,6 +32,12 @@ module.exports = {
             commonjs2: 'react',
             commonjs: 'react',
             amd: 'react'
+        },
+        'styled-components': {
+            root: 'styled-components',
+            commonjs: 'styled-components',
+            commonjs2: 'styled-components',
+            amd: 'styled-components'
         }
     },
 
