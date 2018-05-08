@@ -3,26 +3,28 @@
 ## TODO
 
 *   project setup
-    *   yarn
-        *   workspaces
-    *   lerna
+    *   ~~**yarn**~~
+        *   ~~**workspaces**~~
+    *   ~~**lerna**~~
     *   scripts
+*   ~~**spa**~~
+    *   ~~**routing**~~
 *   building
-    *   webpack
-    *   babel
-        *   preset-env
-        *   es2017
+    *   ~~**webpack**~~
+    *   ~~**babel**~~
+        *   **~~preset-env**~~
+        *   **~~es2017**~~
         *   cssnext
 *   styling
     *   css modules
-    *   styled components
+    *   ~~**styled components**~~
     *   styled system
-*   code quality
-    *   prettier
-    *   eslint
+*   ~~**code quality**~~
+    *   ~~**prettier**~~
+    *   ~~**eslint**~~
     *   (editorconfig)
 *   testing
-    *   storybook
+    *   **storybook**
         *   storyshots
     *   unit
         *   jest
@@ -34,6 +36,6 @@
     *   mock server
     *   codemods / jscodeshift
 *   typings
-    *   prop-types
+    *   ~~**prop-types**~~
     *   flow
 *   project structure / file structure
