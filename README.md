@@ -23,6 +23,9 @@
     *   ~~**prettier**~~
     *   ~~**eslint**~~
     *   (editorconfig)
+*   state
+    _ redux
+    _ reselect
 *   testing
     *   **storybook**
         *   storyshots

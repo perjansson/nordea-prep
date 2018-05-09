@@ -4,15 +4,17 @@
     font-family: 'Share Tech Mono', monospace;
 }
 
+body {
+    background: linear-gradient(20deg, darkblue, white);
+    height: 100vh;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    background: linear-gradient(20deg, darkblue, white);
-}
-
 .title {
+    color: white;
     text-shadow: 0 0 60px black, 0 0 40px darkblue;
 }
 
@@ -28,6 +30,15 @@ body {
 .forwardLink,
 .backLink {
     padding: 20px;
+}
+
+.error {
+    color: lightpink;
+    text-shadow: 0 0 10px black, 0 0 5px darkblue;
+    font-size: 46px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .fade-enter {

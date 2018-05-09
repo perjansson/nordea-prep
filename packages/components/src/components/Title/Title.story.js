@@ -1,10 +1,16 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import styled from 'styled-components'
 
-import Title from './Title';
+import Title from './Title'
 
-const TestComp = () => <div>TestComp</div>;
+const Wrapper = styled.div`
+    & > * {
+        color: pink;
+    }
+`
 
 storiesOf('Title', module)
-    .add('with text', () => <Title>Hello World!</Title>)
-    .add('with some emoji', () => <Title>😀 😎 👍 💯</Title>);
+    .addDecorator(story => <Wrapper>{story()}</Wrapper>)
+    .add('with text', () => <Title>My Fancy Title!</Title>)
+    .add('with emoji', () => <Title emoji="👍">My Fancy Title!</Title>)

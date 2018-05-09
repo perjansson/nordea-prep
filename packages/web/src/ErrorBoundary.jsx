@@ -7,33 +7,23 @@ type Props = {
 
 type State = {
     hasError: boolean,
-    error: ?string,
-    info: ?string,
 }
 
 class ErrorBoundary extends React.Component<Props, State> {
     state = {
         hasError: false,
-        error: null,
-        info: null,
     }
 
-    componentDidCatch(error: string, info: string) {
+    componentDidCatch() {
         this.setState({
             hasError: true,
-            error,
-            info,
         })
     }
 
     render() {
-        const { hasError, error, info } = this.state
+        const { hasError } = this.state
         if (hasError) {
-            return (
-                <p>
-                    Sorry Something went wrong (Error: {error} and info: {info})
-                </p>
-            )
+            return <p className="error">Sorry Something went wrong</p>
         }
         return this.props.children
     }

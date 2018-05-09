@@ -1,13 +1,30 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import styled from 'styled-components'
 
-import Splash from './Splash';
-import Title from '../Title/Title';
+import Page from './Page'
+import Title from '../Title/Title'
+import Rotate from '../Rotate/Rotate'
 
-storiesOf('Splash', module)
-    .add('with text', () => <Splash>Hello World!</Splash>)
+const PageContent = styled.div`
+    height: 300px;
+    width: 300px;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+storiesOf('Page', module)
+    .add('with text', () => (
+        <Page>
+            <PageContent>Hello Page!</PageContent>
+        </Page>
+    ))
     .add('with Title component', () => (
-        <Splash>
-            <Title>My fancy title</Title>
-        </Splash>
-    ));
+        <Page>
+            <Rotate>
+                <Title>My fancy title</Title>
+            </Rotate>
+        </Page>
+    ))
