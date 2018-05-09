@@ -8,7 +8,7 @@ const rotate360 = keyframes`
 
 const Pulse = styled.div`
     display: inline-block;
-    animation: ${rotate360} 5s linear infinite;
+    animation: ${rotate360} 10s linear infinite;
     animation-delay: 1s;
 `
 

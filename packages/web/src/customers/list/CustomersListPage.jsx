@@ -11,7 +11,7 @@ const CustomersListPage = () => (
             </Title>
         </Pulse>
         <Link to="/">
-            <BackLink className="backLink">to start page</BackLink>
+            <BackLink className="backLink">start page</BackLink>
         </Link>
     </Page>
 )

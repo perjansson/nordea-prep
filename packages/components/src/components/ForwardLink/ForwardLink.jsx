@@ -11,21 +11,21 @@ const Icon = styled.span`
     color: #fff;
 `
 
-const BackLink = ({ children, className }) => (
+const ForwardLink = ({ children, className }) => (
     <div className={className}>
-        <Icon>&lt;&lt; </Icon>
-        <Link>back to {children}</Link>
-        <Icon> &lt;&lt;</Icon>
+        <Icon>&gt;&gt; </Icon>
+        <Link>to {children}</Link>
+        <Icon> &gt;&gt;</Icon>
     </div>
 )
 
-BackLink.propTypes = {
+ForwardLink.propTypes = {
     children: string.isRequired,
     className: string,
 }
 
-BackLink.defaultProps = {
+ForwardLink.defaultProps = {
     className: '',
 }
 
-export default BackLink
+export default ForwardLink
