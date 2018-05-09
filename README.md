@@ -16,7 +16,7 @@
         *   **~~es2017**~~
         *   cssnext
 *   styling
-    *   css modules
+    *   ~~**css modules**~~
     *   ~~**styled components**~~
     *   styled system
 *   ~~**code quality**~~
@@ -37,5 +37,5 @@
     *   codemods / jscodeshift
 *   typings
     *   ~~**prop-types**~~
-    *   flow
+    *   ~~**flow**~~
 *   project structure / file structure
