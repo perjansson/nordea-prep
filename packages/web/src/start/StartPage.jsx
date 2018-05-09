@@ -1,15 +1,29 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Page, Pulse, Title, ForwardLink } from '@nordea-prep/components'
+import {
+    Page,
+    Fade,
+    Pulse,
+    Rotate,
+    Title,
+    ForwardLink,
+} from '@nordea-prep/components'
+
+import NordeaLogo from './nordea_logo.svg'
 
 const StartPage = () => (
     <Page>
-        <Pulse>
+        <Fade>
             <Title className="title title__clickable" emoji="😎">
-                Nordea Start Page
+                start page
             </Title>
-        </Pulse>
+        </Fade>
+        <Rotate>
+            <Pulse>
+                <NordeaLogo fill="lightpink" width={250} height={250} />
+            </Pulse>
+        </Rotate>
         <Link to="/customers">
             <ForwardLink className="forwardLink">
                 customers list page

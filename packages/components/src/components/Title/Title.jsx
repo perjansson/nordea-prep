@@ -5,6 +5,12 @@ import styled from 'styled-components'
 const Header = styled.h1`
     font-size: 84px;
     margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > * {
+        font-size: 0.7em;
+    }
 `
 
 const Title = ({ children, emoji, className, style }) => (

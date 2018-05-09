@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components'
 
 import {
     Page,
-    Pulse,
+    Fade,
     Title,
     BackLink,
     List,
@@ -45,11 +45,11 @@ const Wrapper = styled.div`
 
 const CustomersListPage = ({ customers }) => (
     <Page>
-        <Pulse>
+        <Fade>
             <Title className="title" emoji="🤩">
-                Customers List Page
+                customers list page
             </Title>
-        </Pulse>
+        </Fade>
         <Wrapper>
             <List
                 items={customers}

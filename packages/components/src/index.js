@@ -1,5 +1,6 @@
 import Page from './components/Page/Page'
 import Rotate from './components/Rotate/Rotate'
+import Fade from './components/Fade/Fade'
 import Pulse from './components/Pulse/Pulse'
 import Title from './components/Title/Title'
 import List, {
@@ -14,6 +15,7 @@ import BackLink from './components/BackLink/BackLink'
 export {
     Page,
     Rotate,
+    Fade,
     Pulse,
     Title,
     List,
