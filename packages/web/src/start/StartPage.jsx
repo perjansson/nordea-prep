@@ -11,7 +11,9 @@ const StartPage = () => (
             </Title>
         </Pulse>
         <Link to="/customers">
-            <ForwardLink className="backLink">customers list page</ForwardLink>
+            <ForwardLink className="forwardLink">
+                customers list page
+            </ForwardLink>
         </Link>
     </Page>
 )
