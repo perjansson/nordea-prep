@@ -10,7 +10,7 @@ import {
     ForwardLink,
 } from '@nordea-prep/components'
 
-import NordeaLogo from './nordea_logo.svg'
+import NordeaLogo from './nordeaLogo.svg'
 
 const StartPage = () => (
     <Page>
@@ -19,7 +19,7 @@ const StartPage = () => (
                 start page
             </Title>
         </Fade>
-        <Rotate>
+        <Rotate style={{ pointerEvents: 'none' }}>
             <Pulse>
                 <NordeaLogo fill="lightpink" width={250} height={250} />
             </Pulse>
