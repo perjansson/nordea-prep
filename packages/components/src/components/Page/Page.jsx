@@ -8,6 +8,18 @@ const Page = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+
+    &:after {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(rgba(255, 255, 255, 0) 0%, darkblue 100%);
+        pointer-events: none;
+        z-index: -1;
+    }
 `
 
 Page.propTypes = {

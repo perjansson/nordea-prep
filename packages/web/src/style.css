@@ -5,7 +5,9 @@
 }
 
 body {
-    background: linear-gradient(20deg, darkblue, white);
+    background: linear-gradient(20deg, darkblue, white) no-repeat center center
+        fixed;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -34,6 +36,7 @@ a {
 
 .forwardLink,
 .backLink {
+    margin-top: 50px;
     padding: 20px;
 }
 

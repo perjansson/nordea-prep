@@ -32,10 +32,8 @@ const CustomerListItemRow = styled(ListItems)`
 `
 
 const Wrapper = styled.div`
-    height: 480px;
     width: 100vw;
     padding: 0 20px;
-    overflow-y: scroll;
 `
 
 const CustomersList = ({ customers }) => (
