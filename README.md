@@ -6,7 +6,7 @@
     *   ~~**yarn**~~
         *   ~~**workspaces**~~
     *   ~~**lerna**~~
-    *   scripts
+    *   ~~**scripts**~~
 *   ~~**spa**~~
     *   ~~**routing**~~
 *   building
@@ -31,12 +31,12 @@
         *   ~~**storyshots**~~
     *   unit
         *   ~~**jest**~~
-        *   enzyme (shallow, mount)
+        *   ~~**enzyme (shallow, mount)**~~
     *   integration
     *   functional / e2e
         *   cypress
 *   dx
-    *   mock server
+    *   ~~**mock server**~~
     *   codemods / jscodeshift
 *   typings
     *   ~~**prop-types**~~
