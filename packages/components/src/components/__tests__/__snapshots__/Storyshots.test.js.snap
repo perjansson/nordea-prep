@@ -72,6 +72,7 @@ exports[`Storyshots Page with Title component 1`] = `
   >
     <h1
       className="sc-htoDjs kzjMhQ"
+      onClick={[Function]}
       style={Object {}}
     >
       My fancy title
@@ -99,6 +100,7 @@ exports[`Storyshots Title with emoji 1`] = `
 >
   <h1
     className="sc-htoDjs kzjMhQ"
+    onClick={[Function]}
     style={Object {}}
   >
     My Fancy Title!
@@ -119,6 +121,7 @@ exports[`Storyshots Title with text 1`] = `
 >
   <h1
     className="sc-htoDjs kzjMhQ"
+    onClick={[Function]}
     style={Object {}}
   >
     My Fancy Title!

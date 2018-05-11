@@ -1,5 +1,5 @@
 import React from 'react'
-import { element, string, any, oneOfType } from 'prop-types'
+import { element, string, any, oneOfType, func } from 'prop-types'
 import styled from 'styled-components'
 
 const Header = styled.h1`
@@ -13,8 +13,8 @@ const Header = styled.h1`
     }
 `
 
-const Title = ({ children, emoji, className, style }) => (
-    <Header className={className} style={style}>
+const Title = ({ children, emoji, className, style, onClick }) => (
+    <Header onClick={onClick} className={className} style={style}>
         {children}
         {emoji && (
             <span role="img" aria-label="smiley-with-star-eyes">
@@ -30,12 +30,14 @@ Title.propTypes = {
     emoji: string,
     className: string,
     style: any,
+    onClick: func,
 }
 
 Title.defaultProps = {
     emoji: '',
     className: '',
     style: {},
+    onClick: () => {},
 }
 
 export default Title

@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title /> jest snapshot renders mounted component 1`] = `
+.c0 {
+  font-size: 84px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 > * {
+  font-size: 0.7em;
+}
+
+<Title
+  className=""
+  emoji="👍"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <styled.h1
+    className=""
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <h1
+      className="c0"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      title text
+      <span
+        aria-label="smiley-with-star-eyes"
+        role="img"
+      >
+         
+        👍
+      </span>
+    </h1>
+  </styled.h1>
+</Title>
+`;
+
+exports[`<Title /> jest snapshot renders shallow component 1`] = `
+<styled.h1
+  className=""
+  onClick={[Function]}
+  style={Object {}}
+>
+  title text
+  <span
+    aria-label="smiley-with-star-eyes"
+    role="img"
+  >
+     
+    👍
+  </span>
+</styled.h1>
+`;
