@@ -28,9 +28,9 @@
     _ reselect
 *   testing
     *   **storybook**
-        *   storyshots
+        *   ~~**storyshots**~~
     *   unit
-        *   jest
+        *   ~~**jest**~~
         *   enzyme (shallow, mount)
     *   integration
     *   functional / e2e
