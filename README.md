@@ -12,8 +12,8 @@
 *   building
     *   ~~**webpack**~~
     *   ~~**babel**~~
-        *   **~~preset-env**~~
-        *   **~~es2017**~~
+        *   ~~**preset-env**~~
+        *   ~~**es2017**~~
         *   cssnext
 *   styling
     *   ~~**css modules**~~
@@ -24,7 +24,7 @@
     *   ~~**eslint**~~
     *   (editorconfig)
 *   state
-    _ redux
+    _ ~~**redux**~~
     _ reselect
 *   testing
     *   **storybook**

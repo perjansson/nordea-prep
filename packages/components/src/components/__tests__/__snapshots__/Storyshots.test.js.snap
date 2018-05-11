@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots List with items 1`] = `
+<div
+  className="sc-bdVaJa gZdsYr"
+>
+  <div
+    className="sc-EHOje dLpJaY sc-bwzfXH eKVNCE"
+  >
+    <div
+      className="sc-htpNat jYvbBr"
+    >
+      Name
+    </div>
+    <div
+      className="sc-htpNat jYvbBr"
+    >
+      Age
+    </div>
+  </div>
+  <div
+    className="sc-bZQynM fArZfC sc-bxivhb kOeBJz"
+  >
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      Moneypenny
+    </div>
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      55
+    </div>
+  </div>
+  <div
+    className="sc-bZQynM fArZfC sc-bxivhb kOeBJz"
+  >
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      Bond
+    </div>
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      66
+    </div>
+  </div>
+  <div
+    className="sc-bZQynM fArZfC sc-bxivhb kOeBJz"
+  >
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      Goldfinger
+    </div>
+    <div
+      className="sc-ifAKCX fbuCpW"
+    >
+      77
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Page with Title component 1`] = `
+<div
+  className="sc-gzVnrw kOFebC"
+>
+  <div
+    className="sc-dnqmqq hwsgFr"
+  >
+    <h1
+      className="sc-htoDjs kzjMhQ"
+      style={Object {}}
+    >
+      My fancy title
+      
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Page with text 1`] = `
+<div
+  className="sc-gzVnrw kOFebC"
+>
+  <div
+    className="sc-iwsKbI iddeco"
+  >
+    Hello Page!
+  </div>
+</div>
+`;
+
+exports[`Storyshots Title with emoji 1`] = `
+<div
+  className="sc-gZMcBi gvsbxj"
+>
+  <h1
+    className="sc-htoDjs kzjMhQ"
+    style={Object {}}
+  >
+    My Fancy Title!
+    <span
+      aria-label="smiley-with-star-eyes"
+      role="img"
+    >
+       
+      👍
+    </span>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Title with text 1`] = `
+<div
+  className="sc-gZMcBi gvsbxj"
+>
+  <h1
+    className="sc-htoDjs kzjMhQ"
+    style={Object {}}
+  >
+    My Fancy Title!
+    
+  </h1>
+</div>
+`;
