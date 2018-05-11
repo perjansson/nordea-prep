@@ -27,6 +27,11 @@ a {
     cursor: pointer;
 }
 
+.logo {
+    pointer-events: 'none';
+    z-index: -1;
+}
+
 .forwardLink,
 .backLink {
     padding: 20px;

@@ -19,7 +19,7 @@ const StartPage = () => (
                 start page
             </Title>
         </Fade>
-        <Rotate style={{ pointerEvents: 'none' }}>
+        <Rotate className="logo">
             <Pulse>
                 <NordeaLogo fill="lightpink" width={250} height={250} />
             </Pulse>

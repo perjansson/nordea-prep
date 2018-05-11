@@ -62,13 +62,41 @@ module.exports = {
         }),
     ],
 
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                commons: {
+                    chunks: 'initial',
+                    minChunks: 2,
+                    maxInitialRequests: 5,
+                    minSize: 0,
+                },
+                vendor: {
+                    test: /node_modules/,
+                    chunks: 'initial',
+                    name: 'vendor',
+                    priority: 10,
+                    enforce: true,
+                },
+            },
+        },
+    },
+
     resolve: {
         // which file can be required without extensions
         extensions: ['.js', '.jsx'],
         modules: [paths.srcRoot, 'node_modules'],
     },
 
+    // dev server when running locally
     devServer: {
+        hot: false,
+        proxy: {
+            '/prep-api/1.0': {
+                target: 'http://localhost:8089',
+                secure: false,
+            },
+        },
         historyApiFallback: {
             index: '/',
         },

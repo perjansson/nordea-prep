@@ -1,6 +1,28 @@
 {
-  "name": "mockserver",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+    "name": "@nordea-prep/mockserver",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "babel-node": "babel-node --presets=latest",
+        "start": "nodemon --watch **/*js --exec yarn babel-node -- server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "cors": "^2.8.4",
+        "express": "^4.16.3",
+        "express-delay": "^0.2.0",
+        "faker": "^4.1.0",
+        "lodash": "^4.17.10",
+        "moment": "^2.22.1",
+        "morgan": "^1.9.0"
+    },
+    "devDependencies": {
+        "babel-plugin-module-resolver": "^3.1.1",
+        "babel-preset-latest": "^6.24.1",
+        "eslint": "4.19.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-import": "^2.11.0",
+        "nodemon": "^1.17.4"
+    }
 }
