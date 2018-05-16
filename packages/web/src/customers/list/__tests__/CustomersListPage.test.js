@@ -17,16 +17,17 @@ describe('<CustomersListPage />', () => {
         afterEach(restoreFetchMock)
 
         it('fetches and shows customers on load', async () => {
-            mockDataFetch('customers', [
+            const customersResponse = [
                 {
                     id: 0,
                     name: 'Mina Watsica',
                     phone: '139-120-3133',
                     email: 'Gracie_Weber@hotmail.com',
                 },
-            ])
+            ]
+            mockDataFetch('customers', customersResponse)
 
-            const { wrapper } = renderApp(<CustomersListPage />)
+            const { wrapper, store } = renderApp(<CustomersListPage />)
 
             // No rendered customers list initially
             expect(wrapper.find(CustomersList).exists()).toBeFalsy()
@@ -35,7 +36,10 @@ describe('<CustomersListPage />', () => {
             wrapper.update()
 
             // Customers list renderer after data fetch is complete
-            expect(wrapper.find(CustomersList).exists()).toBeTruthy()
+            const customersList = wrapper.find(CustomersList)
+            expect(customersList.exists()).toBeTruthy()
+            expect(customersList.prop('customers')).toEqual(customersResponse)
+            expect(store.getState().customers.list).toEqual(customersResponse)
         })
 
         it('fetches and shows error message on fetch error', async () => {

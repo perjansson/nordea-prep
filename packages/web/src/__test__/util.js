@@ -2,8 +2,11 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 import { MemoryRouter } from 'react-router-dom'
-import configureStore from 'configureStore'
 import fetchMock from 'fetch-mock'
+import configureMockStore from 'redux-mock-store'
+import thunk from 'redux-thunk'
+
+import configureStore from 'configureStore'
 
 import config from 'config'
 
@@ -30,5 +33,17 @@ export const mockDataFetchError = (resourcePath, errorMessage) =>
 
 export const restoreFetchMock = () => fetchMock.restore()
 
+export const createMockStore = initialState =>
+    configureMockStore([thunk])(initialState)
+
 export const flushAllPromises = () =>
     new Promise(resolve => setImmediate(resolve))
+
+const RealDateNowFn = Date.now
+export const mockDate = isoDate => {
+    global.Date.now = jest.fn(() => isoDate)
+}
+
+export const resetDate = () => {
+    global.Date.now = RealDateNowFn
+}

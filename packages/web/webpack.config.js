@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const paths = require('./config/paths')
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 module.exports = {
     // define which files should go in which bundle
     entry: {
@@ -87,6 +89,9 @@ module.exports = {
         extensions: ['.js', '.jsx'],
         modules: [paths.srcRoot, 'node_modules'],
     },
+
+    // Source maps
+    devtool: isProduction ? 'source-map' : 'cheap-module-eval-source-map',
 
     // dev server when running locally
     devServer: {
