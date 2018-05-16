@@ -18,7 +18,6 @@ const Page = styled.div`
         height: 100px;
         background: linear-gradient(rgba(255, 255, 255, 0) 0%, darkblue 100%);
         pointer-events: none;
-        z-index: -1;
     }
 `
 
