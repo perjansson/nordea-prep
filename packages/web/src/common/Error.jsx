@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 
-const Error = ({ message }) => <Fragment>{message}</Fragment>
+const Error = ({ message }) => <div>{message}</div>
 
 export default Error

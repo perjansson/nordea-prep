@@ -11,7 +11,7 @@ const defaultState = {
     receivedAt: null,
 }
 
-const customers = (state = defaultState, action) => {
+const customers = (state = defaultState, action = {}) => {
     const { type, payload } = action
 
     switch (type) {
@@ -20,18 +20,33 @@ const customers = (state = defaultState, action) => {
                 ...state,
                 isFetching: true,
             }
-        case RECEIVE_CUSTOMERS:
+
+        case RECEIVE_CUSTOMERS: {
+            const list = payload.reduce((memo, customer) => {
+                const currentMemo = { ...memo }
+                const currentCustomer = { ...customer }
+
+                const { id } = currentCustomer
+                currentMemo[id] = currentCustomer
+                delete currentCustomer.id
+
+                return currentMemo
+            }, {})
+
             return {
                 ...state,
-                list: payload,
+                list,
                 isFetching: false,
             }
+        }
+
         case RECEIVE_CUSTOMERS_ERROR:
             return {
                 ...state,
                 error: payload,
                 isFetching: false,
             }
+
         default:
             return state
     }

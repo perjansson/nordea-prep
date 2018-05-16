@@ -19,7 +19,7 @@ describe('<CustomersListPage />', () => {
         it('fetches and shows customers on load', async () => {
             const customersResponse = [
                 {
-                    id: 0,
+                    id: '0',
                     name: 'Mina Watsica',
                     phone: '139-120-3133',
                     email: 'Gracie_Weber@hotmail.com',
@@ -35,11 +35,21 @@ describe('<CustomersListPage />', () => {
             await flushAllPromises()
             wrapper.update()
 
+            const expectedCustomersListState = {
+                '0': {
+                    email: 'Gracie_Weber@hotmail.com',
+                    name: 'Mina Watsica',
+                    phone: '139-120-3133',
+                },
+            }
+
             // Customers list renderer after data fetch is complete
             const customersList = wrapper.find(CustomersList)
             expect(customersList.exists()).toBeTruthy()
             expect(customersList.prop('customers')).toEqual(customersResponse)
-            expect(store.getState().customers.list).toEqual(customersResponse)
+            expect(store.getState().customers.list).toEqual(
+                expectedCustomersListState,
+            )
         })
 
         it('fetches and shows error message on fetch error', async () => {

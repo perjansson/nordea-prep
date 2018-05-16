@@ -24,15 +24,18 @@
     *   ~~**eslint**~~
     *   (editorconfig)
 *   state
-    _ ~~**redux**~~
-    _ reselect
+    *   ~~**redux**~~
+    *   ~~**reselect**~~
+        *   ~~**normalized state**~~
 *   testing
     *   **storybook**
         *   ~~**storyshots**~~
     *   unit
         *   ~~**jest**~~
         *   ~~**enzyme (shallow, mount)**~~
-    *   integration
+    *   ~~**integration**~~
+        *   ~~**fetch-mock**~~
+        *   ~~**redux-mock-store**~~
     *   functional / e2e
         *   cypress
 *   dx
@@ -41,4 +44,4 @@
 *   typings
     *   ~~**prop-types**~~
     *   ~~**flow**~~
-*   project structure / file structure
+*   ~~**project structure / file structure**~~

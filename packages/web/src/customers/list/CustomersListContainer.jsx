@@ -3,6 +3,11 @@ import { connect } from 'react-redux'
 import { array, func, string, bool } from 'prop-types'
 
 import { fetchCustomers } from 'customers/actions'
+import {
+    customersListSelector,
+    errorMessageSelector,
+    showCustomersSelector,
+} from 'customers/selectors'
 
 import CustomersList from 'customers/list/components/CustomersList'
 import Error from 'common/Error'
@@ -25,12 +30,11 @@ class CustomersListContainer extends Component {
 }
 
 const mapStateToProps = state => {
-    const { list: customers, error } = state.customers
-    return {
-        customers,
-        error,
-        showCustomers: !!customers && !error,
-    }
+    const customers = customersListSelector(state)
+    const error = errorMessageSelector(state)
+    const showCustomers = showCustomersSelector(state)
+
+    return { customers, error, showCustomers }
 }
 
 CustomersListContainer.propTypes = {
