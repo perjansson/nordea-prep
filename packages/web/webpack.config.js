@@ -1,3 +1,4 @@
+const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
@@ -63,6 +64,7 @@ module.exports = {
             template: paths.hostFileTemplate,
             filename: paths.hostFile,
         }),
+        new PreloadWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',
