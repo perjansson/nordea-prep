@@ -14,6 +14,10 @@ module.exports = {
         app: ['babel-polyfill', paths.entryPoint],
     },
 
+    output: {
+        filename: '[name].[chunkhash].js',
+    },
+
     module: {
         rules: [
             {
