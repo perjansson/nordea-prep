@@ -24,7 +24,7 @@ class CustomersListContainer extends Component {
         return showCustomers ? (
             <CustomersList customers={customers} />
         ) : (
-            <Error message={error} />
+            <Error>{error}</Error>
         )
     }
 }
