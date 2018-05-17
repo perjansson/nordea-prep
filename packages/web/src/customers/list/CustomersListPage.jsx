@@ -1,17 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Page, Fade, Title, BackLink } from '@nordea-prep/components'
+import { Page, FadeInOut, Title, BackLink } from '@nordea-prep/components'
 
 import CustomersListContainer from 'customers/list/CustomersListContainer'
 
 const CustomersListPage = () => (
     <Page>
-        <Fade>
+        <FadeInOut>
             <Title className="title" emoji="🤩">
                 customers list page
             </Title>
-        </Fade>
+        </FadeInOut>
         <CustomersListContainer />
         <Link to="/">
             <BackLink className="backLink">start page</BackLink>

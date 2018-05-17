@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import {
     Page,
-    Fade,
+    FadeInOut,
     Pulse,
     Rotate,
     Title,
@@ -38,7 +38,7 @@ class StartPage extends Component {
     render() {
         return (
             <Page>
-                <Fade>
+                <FadeInOut>
                     <Title
                         onClick={this.handleTitleClick}
                         className="title title__clickable"
@@ -46,7 +46,7 @@ class StartPage extends Component {
                     >
                         start page
                     </Title>
-                </Fade>
+                </FadeInOut>
 
                 {this.renderLogo()}
 
