@@ -3,10 +3,12 @@
         [
             "env",
             {
-                "modules": false,
                 "targets": {
-                    "browsers": ["last 2 versions", "not ie <= 10"]
-                }
+                    "browsers": "> 3%"
+                },
+                "modules": false,
+                "useBuiltIns": true,
+                "debug": false
             }
         ],
         "react",

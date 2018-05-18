@@ -1,18 +1,20 @@
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const paths = require('./config/paths')
 
 const isProduction = process.env.NODE_ENV === 'production'
+const analyze = process.env.ANALYZE_BUILD === 'true'
 
 module.exports = {
     // define which files should go in which bundle
     entry: {
         // things not made by us
         vendor: ['react', 'react-dom'],
-        // polyfills and the app entry point
-        app: ['babel-polyfill', paths.entryPoint],
+        // app entry point
+        app: [paths.entryPoint],
     },
 
     output: {
@@ -64,11 +66,22 @@ module.exports = {
             template: paths.hostFileTemplate,
             filename: paths.hostFile,
         }),
-        new PreloadWebpackPlugin(),
+        new PreloadWebpackPlugin({
+            rel: 'prefetch',
+        }),
         new MiniCssExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
+        ...(analyze
+            ? [
+                  new BundleAnalyzerPlugin({
+                      analyzerMode: 'static',
+                      openAnalyzer: false,
+                      reportFilename: './reports/reports-index.html',
+                  }),
+              ]
+            : []),
     ],
 
     optimization: {
