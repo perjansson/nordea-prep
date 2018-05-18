@@ -2,6 +2,7 @@ const PreloadWebpackPlugin = require('preload-webpack-plugin')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const WebpackMonitor = require('webpack-monitor')
 
 const paths = require('./config/paths')
 
@@ -77,8 +78,14 @@ module.exports = {
             ? [
                   new BundleAnalyzerPlugin({
                       analyzerMode: 'static',
-                      openAnalyzer: false,
-                      reportFilename: './reports/reports-index.html',
+                      openAnalyzer: true,
+                      reportFilename:
+                          '../build-stats/reports/reports-index.html',
+                  }),
+                  new WebpackMonitor({
+                      target: '../packages/web/build-stats/monitor/stats.json', // default -> '../monitor/stats.json'
+                      launch: true,
+                      port: 3030,
                   }),
               ]
             : []),
