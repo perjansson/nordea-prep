@@ -12,6 +12,8 @@ import List, {
 } from './components/List/List'
 import ForwardLink from './components/ForwardLink/ForwardLink'
 import BackLink from './components/BackLink/BackLink'
+import Header from './components/Layout/Header'
+import Footer from './components/Layout/Footer'
 
 export {
     Page,
@@ -27,4 +29,6 @@ export {
     ListValue,
     ForwardLink,
     BackLink,
+    Header,
+    Footer,
 }

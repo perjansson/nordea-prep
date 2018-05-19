@@ -1,21 +1,32 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import { Page, FadeInOut, Title, BackLink } from '@nordea-prep/components'
+import {
+    Page,
+    Header,
+    FadeInOut,
+    Title,
+    BackLink,
+    Footer,
+} from '@nordea-prep/components'
 
 import CustomersListContainer from 'customers/list/CustomersListContainer'
 
 const CustomersListPage = () => (
     <Page>
-        <FadeInOut>
-            <Title className="title" emoji="🤩">
-                customers list page
-            </Title>
-        </FadeInOut>
+        <Header>
+            <FadeInOut>
+                <Title className="title" emoji="🤩">
+                    customers list page
+                </Title>
+            </FadeInOut>
+        </Header>
         <CustomersListContainer />
-        <Link to="/">
-            <BackLink className="backLink">start page</BackLink>
-        </Link>
+        <Footer>
+            <Link to="/">
+                <BackLink className="backLink">start page</BackLink>
+            </Link>
+        </Footer>
     </Page>
 )
 

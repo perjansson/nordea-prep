@@ -1,6 +1,12 @@
 {
-  "name": "e2e",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+    "name": "@nordea-prep/e2e",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "cypress open"
+    },
+    "devDependencies": {
+        "cypress": "^2.1.0"
+    }
 }

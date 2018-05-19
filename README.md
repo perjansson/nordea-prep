@@ -37,7 +37,7 @@
         *   ~~**fetch-mock**~~
         *   ~~**redux-mock-store**~~
     *   functional / e2e
-        *   cypress
+        *   ~~**cypress**~~
 *   dx
     *   ~~**mock server**~~
     *   codemods / jscodeshift

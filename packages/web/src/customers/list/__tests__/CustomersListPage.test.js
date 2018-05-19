@@ -62,7 +62,7 @@ describe('<CustomersListPage />', () => {
 
             const error = wrapper.find(Error)
             expect(error.exists()).toBeTruthy()
-            expect(error.props().message).toContain(errorMessage)
+            expect(error.props().children).toContain(errorMessage)
         })
     })
 })

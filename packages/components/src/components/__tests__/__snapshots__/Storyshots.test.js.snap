@@ -65,7 +65,7 @@ exports[`Storyshots List with items 1`] = `
 
 exports[`Storyshots Page with Title component 1`] = `
 <div
-  className="sc-gzVnrw kOFebC"
+  className="sc-gzVnrw blGghi"
 >
   <div
     className="sc-dnqmqq hwsgFr"
@@ -84,7 +84,7 @@ exports[`Storyshots Page with Title component 1`] = `
 
 exports[`Storyshots Page with text 1`] = `
 <div
-  className="sc-gzVnrw kOFebC"
+  className="sc-gzVnrw blGghi"
 >
   <div
     className="sc-iwsKbI iddeco"

@@ -11,7 +11,11 @@
         "start:mockserver": "cd packages/mockserver && yarn start",
         "build": "run-p build:*",
         "build:web": "cd packages/web && yarn build:prod",
-        "build:components": "cd packages/components && yarn build:prod"
+        "build:components": "cd packages/components && yarn build:prod",
+        "test": "run-p test:*",
+        "test:web": "cd packages/web && yarn test",
+        "test:components": "cd packages/components && yarn test",
+        "test:e2e": "cd packages/e2e && yarn test"
     },
     "devDependencies": {
         "babel-cli": "^6.26.0",

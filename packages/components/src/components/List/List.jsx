@@ -6,8 +6,8 @@ const ListWrapper = styled.div`
     width: 100%;
 `
 
-const List = ({ items, renderHeaderRow, renderRow }) => (
-    <ListWrapper>
+const List = ({ items, renderHeaderRow, renderRow, ...rest }) => (
+    <ListWrapper {...rest}>
         {renderHeaderRow()}
         {items.map(renderRow)}
     </ListWrapper>

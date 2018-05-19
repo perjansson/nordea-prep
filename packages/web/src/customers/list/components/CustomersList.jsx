@@ -54,6 +54,7 @@ const CustomersList = ({ customers }) => (
                     <ListValue>{email}</ListValue>
                 </CustomerListItemRow>
             )}
+            data-test-name="customer-list"
         />
     </Wrapper>
 )

@@ -8,6 +8,8 @@ import {
     Rotate,
     Title,
     ForwardLink,
+    Header,
+    Footer,
 } from '@nordea-prep/components'
 
 import NordeaLogo from './nordeaLogo.svg'
@@ -38,23 +40,27 @@ class StartPage extends Component {
     render() {
         return (
             <Page>
-                <FadeInOut>
-                    <Title
-                        onClick={this.handleTitleClick}
-                        className="title title__clickable"
-                        emoji="😎"
-                    >
-                        start page
-                    </Title>
-                </FadeInOut>
+                <Header>
+                    <FadeInOut>
+                        <Title
+                            onClick={this.handleTitleClick}
+                            className="title title__clickable"
+                            emoji="😎"
+                        >
+                            start page
+                        </Title>
+                    </FadeInOut>
+                </Header>
 
                 {this.renderLogo()}
 
-                <Link to="/customers">
-                    <ForwardLink className="forwardLink">
-                        customers list page
-                    </ForwardLink>
-                </Link>
+                <Footer>
+                    <Link to="/customers">
+                        <ForwardLink className="forwardLink">
+                            customers list page
+                        </ForwardLink>
+                    </Link>
+                </Footer>
             </Page>
         )
     }
