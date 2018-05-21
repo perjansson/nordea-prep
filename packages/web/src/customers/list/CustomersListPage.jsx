@@ -9,6 +9,7 @@ import {
     BackLink,
     Footer,
 } from '@nordea-prep/components'
+// import Page from '@nordea-prep/components/Page'
 
 import CustomersListContainer from 'customers/list/CustomersListContainer'
 

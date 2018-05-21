@@ -1,18 +1,23 @@
 import React from 'react'
 import { string } from 'prop-types'
-import classNames from 'classnames/bind'
+import styled from 'styled-components'
 
-import styles from './BackLink.scss'
+const Link = styled.span`
+    font-size: 24px;
+    color: #fff;
+`
 
-const cx = classNames.bind(styles)
+const Icon = styled.span`
+    color: #fff;
+`
 
 const BackLink = ({ children, className }) => (
-        <div className={cx({ wrapper: true }, className)}>
-            <span className={styles.icon}>&lt;&lt; </span>
-            <span className={styles.link}>back to {children}</span>
-            <span className={styles.icon}> &lt;&lt;</span>
-        </div>
-    )
+    <div className={className}>
+        <Icon>&lt;&lt; </Icon>
+        <Link>to {children}</Link>
+        <Icon> &lt;&lt;</Icon>
+    </div>
+)
 
 BackLink.propTypes = {
     children: string.isRequired,

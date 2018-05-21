@@ -7,7 +7,7 @@
     "scripts": {
         "start": "run-p start:*",
         "start:web": "cd packages/web && yarn start",
-        "start:components": "cd packages/components && yarn build:watch",
+        "start:components": "cd packages/components && yarn build:prod",
         "start:mockserver": "cd packages/mockserver && yarn start",
         "build": "run-p build:*",
         "build:web": "cd packages/web && yarn build:prod",
