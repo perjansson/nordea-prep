@@ -1,13 +1,12 @@
 {
     "name": "@nordea-prep/mockserver",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "index.js",
     "license": "MIT",
     "scripts": {
         "babel-node": "babel-node --presets=latest",
         "start": "nodemon --watch **/*js --exec yarn babel-node -- server.js",
-        "start:delay":
-            "cross-env WITH_DELAY=1500 nodemon --watch **/*js --exec yarn babel-node -- server.js"
+        "start:delay": "cross-env WITH_DELAY=1500 nodemon --watch **/*js --exec yarn babel-node -- server.js"
     },
     "dependencies": {
         "body-parser": "^1.18.2",
