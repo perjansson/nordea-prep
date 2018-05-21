@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { FadeIn } from '@nordea-prep/components'
+import FadeIn from '@nordea-prep/components/dist/Fade/FadeIn'
 import Message from 'common/Message'
 
 const LoadingMessage = styled(Message)`

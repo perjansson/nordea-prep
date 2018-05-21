@@ -8,7 +8,7 @@ import {
     ListHeader,
     ListItems,
     ListValue,
-} from '@nordea-prep/components'
+} from '@nordea-prep/components/dist/List'
 
 const gridTemplateColumnMixin = css`
     grid-template-columns: 1fr 1fr 1fr;

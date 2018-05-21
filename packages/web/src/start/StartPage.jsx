@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import {
-    Page,
-    FadeInOut,
-    Pulse,
-    Rotate,
-    Title,
-    ForwardLink,
-    Header,
-    Footer,
-} from '@nordea-prep/components'
+import Page from '@nordea-prep/components/dist/Page'
+import Header from '@nordea-prep/components/dist/Layout/Header'
+import FadeInOut from '@nordea-prep/components/dist/Fade/FadeInOut'
+import Title from '@nordea-prep/components/dist/Title'
+import ForwardLink from '@nordea-prep/components/dist/ForwardLink'
+import Footer from '@nordea-prep/components/dist/Layout/Footer'
+import Pulse from '@nordea-prep/components/dist/Pulse'
+import Rotate from '@nordea-prep/components/dist/Rotate'
 
 import NordeaLogo from './nordeaLogo.svg'
 

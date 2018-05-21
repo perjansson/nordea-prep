@@ -1,15 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import {
-    Page,
-    Header,
-    FadeInOut,
-    Title,
-    BackLink,
-    Footer,
-} from '@nordea-prep/components'
-// import Page from '@nordea-prep/components/Page'
+import Page from '@nordea-prep/components/dist/Page'
+import Header from '@nordea-prep/components/dist/Layout/Header'
+import FadeInOut from '@nordea-prep/components/dist/Fade/FadeInOut'
+import Title from '@nordea-prep/components/dist/Title'
+import BackLink from '@nordea-prep/components/dist/BackLink'
+import Footer from '@nordea-prep/components/dist/Layout/Footer'
 
 import CustomersListContainer from 'customers/list/CustomersListContainer'
 

@@ -3,7 +3,8 @@ import { shallow, mount } from 'enzyme'
 import 'jest-styled-components'
 import { MemoryRouter } from 'react-router-dom'
 
-import { Title, Rotate } from '@nordea-prep/components'
+import Title from '@nordea-prep/components/dist/Title'
+import Rotate from '@nordea-prep/components/dist/Rotate'
 
 import StartPage from '../StartPage'
 
