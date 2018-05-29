@@ -25,16 +25,19 @@ const CustomerListHeaderRow = styled(ListHeaderRow)`
     ${fontMixin};
     border-bottom: 2px dashed white;
 `
+CustomerListHeaderRow.displayName = 'CustomerListHeaderRow'
 
 const CustomerListItemRow = styled(ListItems)`
     ${gridTemplateColumnMixin};
     ${fontMixin};
 `
+CustomerListItemRow.displayName = 'CustomerListItemRow'
 
 const Wrapper = styled.div`
     width: 100vw;
     padding: 0 20px;
 `
+Wrapper.displayName = 'Wrapper'
 
 const CustomersList = ({ customers }) => (
     <Wrapper>

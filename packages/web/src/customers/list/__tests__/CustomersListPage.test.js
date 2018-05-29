@@ -52,6 +52,26 @@ describe('<CustomersListPage />', () => {
             )
         })
 
+        it('displays empty page while loading customers and full list when loaded', () => {
+            const customersResponse = [
+                {
+                    id: '1',
+                    name: 'Marlene Ledner',
+                    phone: '482-056-9445',
+                    email: 'Brooklyn77@yahoo.com',
+                },
+            ]
+            mockDataFetch('customers', customersResponse)
+
+            const { wrapper } = renderApp(<CustomersListPage />)
+            expect(wrapper).toMatchSnapshot()
+
+            return flushAllPromises().then(() => {
+                wrapper.update()
+                expect(wrapper).toMatchSnapshot()
+            })
+        })
+
         it('fetches and shows error message on fetch error', async () => {
             const errorMessage = 'specific error message'
             mockDataFetchError('customers', errorMessage)

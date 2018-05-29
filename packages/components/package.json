@@ -2,9 +2,7 @@
     "name": "@nordea-prep/components",
     "version": "1.1.1",
     "main": "dist/index.js",
-    "files": [
-        "./dist"
-    ],
+    "files": ["dist"],
     "scripts": {
         "build:dev": "webpack --mode development",
         "build:watch": "rimraf ./dist && cross-env NODE_ENV=production babel-watch src/components --out-dir dist --ignore test.js,story.js",

@@ -2,9 +2,9 @@ import React from 'react'
 import { mount } from 'enzyme'
 import { Provider } from 'react-redux'
 import { MemoryRouter } from 'react-router-dom'
+import thunk from 'redux-thunk'
 import fetchMock from 'fetch-mock'
 import configureMockStore from 'redux-mock-store'
-import thunk from 'redux-thunk'
 
 import configureStore from 'configureStore'
 
@@ -14,7 +14,7 @@ export const renderApp = component => {
     const store = configureStore()
     const wrapper = mount(
         <Provider store={store}>
-            <MemoryRouter>{component}</MemoryRouter>
+            <MemoryRouter keyLength={0}>{component}</MemoryRouter>
         </Provider>,
     )
     return { wrapper, store }

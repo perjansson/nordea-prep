@@ -1,0 +1,425 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CustomersListPage /> integration test displays empty page while loading customers and full list when loaded 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter
+    keyLength={0}
+  >
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <CustomersListPage>
+        <styled.div>
+          <div
+            className="sc-bdVaJa eKvdSL"
+          >
+            <Component>
+              <header>
+                <styled.div>
+                  <div
+                    className="sc-bwzfXH egnLMR"
+                  >
+                    <Title
+                      className="title"
+                      emoji="🤩"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <styled.h1
+                        className="title"
+                        onClick={[Function]}
+                        style={Object {}}
+                      >
+                        <h1
+                          className="title sc-htpNat hOBrmH"
+                          onClick={[Function]}
+                          style={Object {}}
+                        >
+                          customers list page
+                          <span
+                            aria-label="smiley-with-star-eyes"
+                            role="img"
+                          >
+                             
+                            🤩
+                          </span>
+                        </h1>
+                      </styled.h1>
+                    </Title>
+                  </div>
+                </styled.div>
+              </header>
+            </Component>
+            <Connect(CustomersListContainer)>
+              <CustomersListContainer
+                customers={Array []}
+                dispatch={[Function]}
+                error={null}
+                showCustomers={false}
+              >
+                <Error>
+                  <Message>
+                    <div
+                      className="Message-klYsfs ktFSZq"
+                    />
+                  </Message>
+                </Error>
+              </CustomersListContainer>
+            </Connect(CustomersListContainer)>
+            <Component>
+              <footer>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <BackLink
+                      className="backLink"
+                    >
+                      <div
+                        className="backLink"
+                      >
+                        <styled.span>
+                          <span
+                            className="sc-ifAKCX brUUVN"
+                          >
+                            &lt;&lt; 
+                          </span>
+                        </styled.span>
+                        <styled.span>
+                          <span
+                            className="sc-bxivhb keKaPJ"
+                          >
+                            to 
+                            start page
+                          </span>
+                        </styled.span>
+                        <styled.span>
+                          <span
+                            className="sc-ifAKCX brUUVN"
+                          >
+                             &lt;&lt;
+                          </span>
+                        </styled.span>
+                      </div>
+                    </BackLink>
+                  </a>
+                </Link>
+              </footer>
+            </Component>
+          </div>
+        </styled.div>
+      </CustomersListPage>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;
+
+exports[`<CustomersListPage /> integration test displays empty page while loading customers and full list when loaded 2`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <MemoryRouter
+    keyLength={0}
+  >
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "canGo": [Function],
+          "createHref": [Function],
+          "entries": Array [
+            Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+          ],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "index": 0,
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <CustomersListPage>
+        <styled.div>
+          <div
+            className="sc-bdVaJa eKvdSL"
+          >
+            <Component>
+              <header>
+                <styled.div>
+                  <div
+                    className="sc-bwzfXH egnLMR"
+                  >
+                    <Title
+                      className="title"
+                      emoji="🤩"
+                      onClick={[Function]}
+                      style={Object {}}
+                    >
+                      <styled.h1
+                        className="title"
+                        onClick={[Function]}
+                        style={Object {}}
+                      >
+                        <h1
+                          className="title sc-htpNat hOBrmH"
+                          onClick={[Function]}
+                          style={Object {}}
+                        >
+                          customers list page
+                          <span
+                            aria-label="smiley-with-star-eyes"
+                            role="img"
+                          >
+                             
+                            🤩
+                          </span>
+                        </h1>
+                      </styled.h1>
+                    </Title>
+                  </div>
+                </styled.div>
+              </header>
+            </Component>
+            <Connect(CustomersListContainer)>
+              <CustomersListContainer
+                customers={
+                  Array [
+                    Object {
+                      "email": "Brooklyn77@yahoo.com",
+                      "id": "1",
+                      "name": "Marlene Ledner",
+                      "phone": "482-056-9445",
+                    },
+                  ]
+                }
+                dispatch={[Function]}
+                error={null}
+                showCustomers={true}
+              >
+                <CustomersList
+                  customers={
+                    Array [
+                      Object {
+                        "email": "Brooklyn77@yahoo.com",
+                        "id": "1",
+                        "name": "Marlene Ledner",
+                        "phone": "482-056-9445",
+                      },
+                    ]
+                  }
+                >
+                  <Wrapper>
+                    <div
+                      className="CustomersList__Wrapper-kOJqXM gECnhh"
+                    >
+                      <List
+                        data-test-name="customer-list"
+                        items={
+                          Array [
+                            Object {
+                              "email": "Brooklyn77@yahoo.com",
+                              "id": "1",
+                              "name": "Marlene Ledner",
+                              "phone": "482-056-9445",
+                            },
+                          ]
+                        }
+                        renderHeaderRow={[Function]}
+                        renderRow={[Function]}
+                      >
+                        <ListWrapper
+                          data-test-name="customer-list"
+                        >
+                          <div
+                            className="sc-EHOje IabPF"
+                            data-test-name="customer-list"
+                          >
+                            <CustomerListHeaderRow>
+                              <HeaderRow
+                                className="CustomersList__CustomerListHeaderRow-pEiVw fbICpq"
+                              >
+                                <div
+                                  className="CustomersList__CustomerListHeaderRow-pEiVw fbICpq sc-bZQynM fsLozJ"
+                                >
+                                  <Header>
+                                    <div
+                                      className="sc-gzVnrw cbxTUt"
+                                    >
+                                      Name
+                                    </div>
+                                  </Header>
+                                  <Header>
+                                    <div
+                                      className="sc-gzVnrw cbxTUt"
+                                    >
+                                      Phone
+                                    </div>
+                                  </Header>
+                                  <Header>
+                                    <div
+                                      className="sc-gzVnrw cbxTUt"
+                                    >
+                                      Email
+                                    </div>
+                                  </Header>
+                                </div>
+                              </HeaderRow>
+                            </CustomerListHeaderRow>
+                            <CustomerListItemRow
+                              key="Marlene Ledner_482-056-9445_Brooklyn77@yahoo.com"
+                            >
+                              <Items
+                                className="CustomersList__CustomerListItemRow-jteZpo BwHYO"
+                              >
+                                <div
+                                  className="CustomersList__CustomerListItemRow-jteZpo BwHYO sc-htoDjs kUVcju"
+                                >
+                                  <Value>
+                                    <div
+                                      className="sc-dnqmqq iqeVoq"
+                                    >
+                                      Marlene Ledner
+                                    </div>
+                                  </Value>
+                                  <Value>
+                                    <div
+                                      className="sc-dnqmqq iqeVoq"
+                                    >
+                                      482-056-9445
+                                    </div>
+                                  </Value>
+                                  <Value>
+                                    <div
+                                      className="sc-dnqmqq iqeVoq"
+                                    >
+                                      Brooklyn77@yahoo.com
+                                    </div>
+                                  </Value>
+                                </div>
+                              </Items>
+                            </CustomerListItemRow>
+                          </div>
+                        </ListWrapper>
+                      </List>
+                    </div>
+                  </Wrapper>
+                </CustomersList>
+              </CustomersListContainer>
+            </Connect(CustomersListContainer)>
+            <Component>
+              <footer>
+                <Link
+                  replace={false}
+                  to="/"
+                >
+                  <a
+                    href="/"
+                    onClick={[Function]}
+                  >
+                    <BackLink
+                      className="backLink"
+                    >
+                      <div
+                        className="backLink"
+                      >
+                        <styled.span>
+                          <span
+                            className="sc-ifAKCX brUUVN"
+                          >
+                            &lt;&lt; 
+                          </span>
+                        </styled.span>
+                        <styled.span>
+                          <span
+                            className="sc-bxivhb keKaPJ"
+                          >
+                            to 
+                            start page
+                          </span>
+                        </styled.span>
+                        <styled.span>
+                          <span
+                            className="sc-ifAKCX brUUVN"
+                          >
+                             &lt;&lt;
+                          </span>
+                        </styled.span>
+                      </div>
+                    </BackLink>
+                  </a>
+                </Link>
+              </footer>
+            </Component>
+          </div>
+        </styled.div>
+      </CustomersListPage>
+    </Router>
+  </MemoryRouter>
+</Provider>
+`;

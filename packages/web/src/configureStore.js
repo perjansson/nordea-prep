@@ -4,10 +4,10 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 
 import rootReducer from 'reducers'
 
-const configureStore = preloadedState =>
+const configureStore = initialState =>
     createStore(
         rootReducer,
-        preloadedState,
+        initialState,
         composeWithDevTools(applyMiddleware(thunkMiddleware)),
     )
 
