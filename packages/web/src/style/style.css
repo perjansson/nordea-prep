@@ -4,7 +4,7 @@
     font-family: 'Share Tech Mono', monospace;
 }
 
-body {
+body.cover {
     background: linear-gradient(20deg, darkblue, white) no-repeat center center
         fixed;
     background-size: cover;
@@ -49,6 +49,12 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 50px;
+}
+
+.my-fancy-button {
+    color: green;
+    background-color: darkslategray;
+    font-size: 32px;
 }
 
 .fade-enter {
