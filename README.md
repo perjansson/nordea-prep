@@ -1,6 +1,12 @@
 # nordea-prep
 
-## TODO
+## Get started
+
+1. yarn
+2. yarn start
+3. http://localhost:8080
+
+## Content
 
 *   project setup
     *   ~~**yarn**~~
